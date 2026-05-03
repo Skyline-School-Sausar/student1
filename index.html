@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Profile</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    .card {
+      background: white;
+      width: 300px;
+      margin: 50px auto;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    img {
+      width: 100px;
+      border-radius: 50%;
+    }
+
+    h1 {
+      margin: 10px 0;
+    }
+
+    .color-box {
+      height: 20px;
+      border-radius: 5px;
+      margin: 10px 0;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      background: #eee;
+      margin: 5px;
+      padding: 5px;
+      border-radius: 5px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <img src="https://via.placeholder.com/100" alt="Profile Photo">
+
+    <h1 id="name">Your Name</h1>
+
+    <p id="bio">I am a student who loves learning new things!</p>
+
+    <h3>Favorite Color</h3>
+    <div id="colorBox" class="color-box"></div>
+
+    <h3>My Interests</h3>
+    <ul id="interests">
+      <li>Coding</li>
+      <li>Drawing</li>
+      <li>Football</li>
+    </ul>
+
+  </div>
+
+  <script>
+    // Customize here 👇
+    const studentName = "Riya";
+    const bio = "I love art and technology!";
+    const favoriteColor = "purple";
+
+    document.getElementById("name").innerText = studentName;
+    document.getElementById("bio").innerText = bio;
+    document.getElementById("colorBox").style.backgroundColor = favoriteColor;
+  </script>
+
+</body>
+</html>
